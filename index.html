@@ -23,30 +23,24 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
 
-          <!--Header №2-->
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-
-            <!--Button-->
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
-          </li>
-
         </ul>
+
+        <!--Header №2-->
+        <div class="page-header-action">
+
+          <a class="poisck-link" href="#">
+            <span class="visually-hidden">Поиск</span></a>
+
+          <a class="like-link" href="#">
+            <span class="visually-hidden">Избранное</span></a>
+
+          <!--Button-->
+          <a class="button button-header" href="#">Хочу сюда</a>
+        </div>
       </nav>
     </header>
+
+
 
     <!--Main-->
     <main class="main-index">
@@ -59,14 +53,16 @@
 
         <h2 class="main-heading">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
         <p class="main-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-
         <ul class="advantages-list">
+
 
           <!--Синний-->
           <li class="advantages-item">
             <h3 class="advantages-title"> Настоящий <br>городок</h3>
-            <p class="advantages-description">Седона - не аттракцион для<br> туристов, там течёт своя<br> жизнь
-            </p>
+            <p class="advantages-description">Седона - не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
+
+            <img class="images" src="#" alt="#">
+
           </li>
 
 
@@ -90,31 +86,41 @@
 
           <!--Синний-->
           <li class="advantages-item">
+
+            <img class="images" src="#" alt="#">
+
             <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
           </li>
+        </ul>
 
+        <!--Приезжайте в Седону-->
 
+        <div class="page-container stop-comfort">
+          <h2 class="advantages-interested">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!?</h2>
+          <p class="advantages-description">Опытный персонал и качественное обслуживание!</p>
+        </div>
 
-          <!--Жилье-->
+        <!--Жилье-->
+        <ul class="advantages-souvenirs">
           <li class="advantages-item">
 
-            <h3 class="advantages-title">Жилье</h3>
-            <p class="advantages-description">Рекаминдуем пожить<br> в нашем отеле,<br> все как в кино!
+            <h3 class="advantages-title-live">Жилье</h3>
+            <p class="advantages-live">Рекаминдуем пожить<br> в нашем отеле,<br> все как в кино!
             </p>
           </li>
 
           <li class="advantages-item">
 
-            <h3 class="advantages-title">Еда</h3>
-            <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
+            <h3 class="advantages-title-live">Еда</h3>
+            <p class="advantages-live">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
             </p>
           </li>
 
           <li class="advantages-item">
 
-            <h3 class="advantages-title">Сувениры</h3>
-            <p class="advantages-description">Не только китайского,<br> но и настоящего местного<br> производства!
+            <h3 class="advantages-title-live">Сувениры</h3>
+            <p class="advantages-live">Не только китайского,<br> но и настоящего местного<br> производства!
             </p>
           </li>
 
@@ -122,13 +128,13 @@
 
         <!--Заинтересовались?-->
 
-        <div class="page-container">
-          <h2 class="advantages-interested">Заинтересовались?</h2>
+        <div class="page-container page-Interested">
+          <h2 class="advantages-Interested">Заинтересовались?</h2>
 
-          <p class="advantages-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
-            предложения гостиниц в Седоне</p>
+          <p class="advantages-Interested">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
+            гостиниц в Седоне</p>
 
-          <button class="button-2">Поиск гостиницы в Седоне</button>
+          <button class="button">Поиск гостиницы в Седоне</button>
         </div>
 
       </section>
@@ -139,7 +145,7 @@
 
 
     <!--Подпишитесь на рассылку-->
-    <div class="index-footer">
+    <div class="page-container index-footer">
       <h2 class="subscribe-description">Подпишитесь на рассылку</h2>
       <p class="advantages-subscribe">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
@@ -161,23 +167,30 @@
 
       <ul>
         <li>
-          <p class="visually-hidden">ВКонтакте</p>
+          <a href="http://vk">
+            <p class="visually-hidden">ВКонтакте</p>
+          </a>
         </li>
         <li>
-          <p class="visually-hidden">Телеграм</p>
+          <a href="http://tl">
+            <p class="visually-hidden">Телеграм</p>
+          </a>
         </li>
         <li>
-          <p class="visually-hidden">Ютуб</p>
+          <a href="http://yo">
+            <p class="visually-hidden">Ютуб</p>
+          </a>
         </li>
       </ul>
 
       <h3>
-        <a class="footer-call htmlacademy" href="tel+78128121212">+7-812-812-12-12</a>
+        <a class="footer-call htmlacademy" href="tel:+78128121212">+7-812-812-12-12</a>
       </h3>
 
       <a class="htmlacademy" href="https://htmlacademy.ru/">.html<br>academy</a>
 
     </footer>
+
 
 
   </body>
