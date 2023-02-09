@@ -1,0 +1,81 @@
+body{
+    font-display: swap
+}
+
+
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.hero {
+    background-image: url("/images/index-background.jpg");
+}
+
+.stars {
+    color: #83B3D3;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.footer-call {
+    color: black;
+}
+
+.advantages-item{
+    width: 400px;
+    height: 385px;
+    text-align: center;
+
+    background-color: #83B3D3
+}
+
+.second{
+   background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+.third{
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-souvenirs{
+    width: 400px;
+    height: 385px;
+    text-align: center;
+
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.souvenirs-second{
+    background-color:#ffffff;
+}
+
+.button{
+    color: #ffffff;
+    background-color: #756157;
+}
+
+
+.button-blue{
+    background-color: #83B3D3;
+}
