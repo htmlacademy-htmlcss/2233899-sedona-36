@@ -1,7 +1,60 @@
-body{
-    font-display: swap
+@font-face {
+    font-family: "PT-Sans";
+    src: url(./fonts/ptsans-400.woff2) format("woff2");
+    font-weight: 400;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: "PT-Sans";
+    src: url(./fonts/ptsans-700.woff2) format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+body {
+    font-family: "PT-Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.main-catalog{
+    text-transform: capitalize;
+}
+
+.navigation {}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-link {
+    color: black;
+}
+
+.button-header {
+    font-weight: 700;
+    padding: 8px 34px;
+}
+
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-item {
+}
+
+.advantages-title-div{
+}
+
+.advantages-title{
+    margin: 0;
+}
+
+.advantages-item-white {
+    color: #ffffff;
+}
 
 a {
     text-decoration: none;
@@ -9,6 +62,8 @@ a {
 }
 
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -16,8 +71,30 @@ li {
     list-style: none;
 }
 
+p {
+    margin: 0;
+}
+
+
 .hero {
     background-image: url("/images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.button-search {
+    width: 270px;
+    border: 0;
+    font-weight: 700;
+    padding: 8px 50px;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
 }
 
 .stars {
@@ -41,7 +118,7 @@ li {
     color: black;
 }
 
-.advantages-item{
+.advantages-item {
     width: 400px;
     height: 385px;
     text-align: center;
@@ -49,16 +126,24 @@ li {
     background-color: #83B3D3
 }
 
-.second{
-   background-color: rgba(131, 179, 211, 0.12);
+.second {
+    background-color: rgba(131, 179, 211, 0.12);
 }
 
 
-.third{
+.third {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item-souvenirs{
+.advantages-souvenirs{
+    margin: 0;
+    padding: 0;
+}
+
+
+.advantages-item-souvenirs {
+    margin: 0;
+    padding: 0;
     width: 400px;
     height: 385px;
     text-align: center;
@@ -66,16 +151,115 @@ li {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.souvenirs-second{
-    background-color:#ffffff;
+.catalog-nise-hotels{
+    text-transform: capitalize;
 }
 
-.button{
+
+.souvenirs-second {
+    background-color: #ffffff;
+}
+
+.button {
+    text-transform: uppercase;
     color: #ffffff;
     background-color: #756157;
 }
 
 
-.button-blue{
+.button-blue {
     background-color: #83B3D3;
+}
+
+
+.subscribe{
+    flex-direction: row-reverse
+}
+
+.form-subscribe {
+    border: 0;
+    padding: 14px 20px;
+    padding-right: 385px;
+    background-color: #F2F2F2;
+}
+
+.submit-subscribe {
+    padding: 8px 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.button-blue{
+    border: 0;
+    padding: 8px 50px;
+}
+
+.catalog-image{
+    color: #ffffff;
+    background-image: url("./images/catalog-backgroung.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index-footer{
+    color: #ffffff;
+    height: 415px;
+    background-image: url("./images/canion.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.index-footer-catalog{
+    height: 415px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pages-numbers{
+    padding: 11px 23px;
+    color: white;
+    background-color:#83B3D3;
+}
+
+.bread-crumbs{
+    color: #ffffff;
+}
+
+.catalog-button-apply{
+    font-weight: 700;
+    padding: 8px 50px;
+    background-color: #83B3D3;
+}
+
+.catalog-button-reset{
+    font-weight: 700;
+    padding: 8px 50px;
+    background: fixed;
+
+}
+
+button{
+    font-weight: 700;
+    border: 0;
+}
+
+
+.button-more{
+    padding: 8px 26px;
+}
+
+.button-color-second{
+    padding: 8px 20px;
+    background-color: #83B3D3;
+}
+
+.button-color-third{
+    padding: 8px 18px;
+    background-color: #7DB54F;
+}
+
+.catalog-rating{
+    padding: 9px 22px;
+    background-color: #F2F2F2;
 }

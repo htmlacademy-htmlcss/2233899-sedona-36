@@ -11,10 +11,10 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <img class="logo" src="./images/logo.png" width="140" height="70" alt="Иконка">
         <ul class="navigation-list">
 
           <!--Header №1-->
-          <img class="logo" src="./images/logo.png" width="140" height="70" alt="Иконка">
           <li class="navigation-item">
             <a class="navigation-link" href="home.html">Главная</a>
           </li>
@@ -48,7 +48,6 @@
     <!--Main-->
     <main class="main-index main-catalog">
       <div class="catalog-image">
-        <img class="catalog-settings-image" src="./images/catalog-backgroung.jpg" alt="Красивый фон">
         <h1>Гостиницы Седоны</h1>
         <a href="./index.html">
           <img class="bread-crumbs" src="./images/home.svg" alt="Домик">
@@ -86,9 +85,9 @@
             <h3 class="catalog-money">Стоимость, ₽:</h3>
 
             <div class="catalog-reset">
-              <button class="catalog-button-apply">Применить</button>
+              <button class="button catalog-button-apply">Применить</button>
 
-              <button class="catalog-button-reset">Сбросить</button>
+              <button class="button catalog-button-reset">Сбросить</button>
             </div>
 
           </form>
@@ -100,7 +99,7 @@
       <section class="catalog-rooms">
         <h1 class="catalog-Hotels">Найдено гостиниц: 38</h1>
 
-        <button>
+        <button class=" button-cheap-first">
           Сначала дешевые
           <img src="./images/arrow.svg" alt="Скрепка">
         </button>
@@ -108,17 +107,17 @@
 
         <ul>
           <li>
-            <button>
+            <button class="button-border">
               <img class="distribution" src="./images/tile.svg" alt="tile">
             </button>
           </li>
           <li>
-            <button>
+            <button class="button-border">
               <img class="distribution" src="./images/slideshow.svg" alt="slideshow">
             </button>
           </li>
           <li>
-            <button>
+            <button class="button-border">
               <img class="distribution" src="./images/list.svg" alt="list">
             </button>
           </li>
@@ -134,7 +133,7 @@
               <p class="catalog-price">От 4000 ₽</p>
             </div>
 
-            <button class="button">Подробнее</button>
+            <button class="button button-more">Подробнее</button>
             <button class="button button-color-second">В Избранное</button>
             <div class="catalog-rating-wrap">
               <div class="catalog-rating-stars">
@@ -157,8 +156,8 @@
               <p class="catalog-price">От 5000 ₽</p>
             </div>
 
-            <button class="button">Подробнее</button>
-            <button class="button button-color-second">В Избранном</button>
+            <button class="button button-more">Подробнее</button>
+            <button class="button button-color-third">В Избранном</button>
             <div class="catalog-rating-wrap">
               <div class="catalog-rating-stars">
                 <span class="rating-stars"><img class="stars" src="./images/star.svg" alt="Звездачка"></span>
@@ -180,7 +179,7 @@
               <p class="catalog-price">От 2500 ₽</p>
             </div>
 
-            <button class="button">Подробнее</button>
+            <button class="button button-more">Подробнее</button>
             <button class="button button-color-second">В Избранное</button>
             <div class="catalog-rating-wrap">
               <div class="catalog-rating-stars">
@@ -202,7 +201,7 @@
               <p class="catalog-price">От 1500 ₽</p>
             </div>
 
-            <button class="button">Подробнее</button>
+            <button class="button button-more">Подробнее</button>
             <button class="button button-color-second">В Избранное</button>
             <div class="catalog-rating-wrap">
               <div class="catalog-rating-stars">
@@ -218,23 +217,23 @@
         <img class="divider" src="./images/divider.png" alt="Линия">
 
         <ul class="pages">
-          <li class="pages-numbers pages-numbers-light">
-            <a href="http://1">1</a>
+          <li class="pages-numbers-light">
+            <a class="pages-numbers" href="http://1">1</a>
           </li>
-          <li class="pages-numbers">
-            <a href="http://2">2</a>
+          <li>
+            <a class="pages-numbers"href="http://2">2</a>
           </li>
-          <li class="pages-numbers">
-            <a href="http://3">3</a>
+          <li">
+            <a class="pages-numbers"href="http://3">3</a>
           </li>
-          <li class="pages-numbers">
-            <a href="http://4">4</a>
+          <li>
+            <a class="pages-numbers"href="http://4">4</a>
           </li>
-          <li class="pages-numbers pages-numbers-light">
-            <a href="http://3">...</a>
+          <li class=" pages-numbers-light">
+            <a class="pages-numbers"href="http://5">...</a>
           </li>
-          <li class="pages-numbers">
-            <a href="http://10">10</a>
+          <li>
+            <a class="pages-numbers"href="http://10">10</a>
           </li>
         </ul>
       </section>
@@ -244,29 +243,28 @@
 
 
     <!--Footer!-->
-
-
-    <!--Подпишитесь на рассылку-->
-    <div class="Catalog-footer">
-      <h2 class="subscribe-description">Подпишитесь на рассылку</h2>
-      <p class="advantages-subscribe">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-
-      <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
-        <label for="newsletter-email"></label>
-        <input class="form-subscribe" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-          id="newsletter-email" required>
-
-        <button class="button-subscribe" type="submit">
-          <span class="submit-subscribe">Подписаться</span>
-        </button>
-
-      </form>
-    </div>
-
-
-    <!--Связь-->
-
     <footer class="page-footer">
+
+
+      <!--Подпишитесь на рассылку-->
+      <div class="page-container index-footer-catalog">
+        <h2 class="subscribe-description">Подпишитесь на рассылку</h2>
+        <p class="advantages-subscribe">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+
+        <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email"></label>
+          <input class="form-subscribe" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+            id="newsletter-email" required>
+
+          <button class="button button-blue" type="submit">
+            <span class="submit-subscribe">Подписаться</span>
+          </button>
+
+        </form>
+      </div>
+
+
+      <!--Связь-->
 
       <ul class="connection-footer">
         <li>
