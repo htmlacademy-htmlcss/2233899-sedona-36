@@ -12,47 +12,121 @@
     font-display: swap;
 }
 
+
 body {
+    width: 1200px;
     font-family: "PT-Sans", Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-.main-catalog{
+.catalog-html{
+    max-width: 1200px;
+}
+
+.main-catalog {
     text-transform: capitalize;
 }
 
-.navigation {}
+.navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
 
 .navigation-list {
+    display: contents;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.navigation-item {
+    justify-content: space-around;
 }
 
 .navigation-link {
     color: black;
 }
 
+.page-header-action {
+    align-content: center;
+}
+
 .button-header {
+    display: block;
     font-weight: 700;
     padding: 8px 34px;
+}
+
+.advantages-item {
+    text-align: center;
+    color: #ffffff;
+
+    background-color: #83B3D3
 }
 
 .advantages-list {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.advantages-item {
+.advantages-item-container {
+    width: 230px;
+    min-height: 200px;
+    padding: 90px 85px;
 }
 
-.advantages-title-div{
+.advantages-item-wide {
+    display: flex;
 }
 
-.advantages-title{
+.advantages-item-wide-rewerse {
+    flex-direction: row-reverse;
+}
+
+.advantages-item-squares,
+.advantages-item-tourist {
+    color: black;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road {
+    color: black;
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.footer-social-network {
+    align-items: center;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-catalog-hotel {
     margin: 0;
 }
 
-.advantages-item-white {
+.connection-footer {
+    align-self: center;
+    display: inline;
+}
+
+.footer-inline {
+    display: inline;
+}
+
+.advantages-interested {
+    margin: 0;
+}
+
+.white {
     color: #ffffff;
 }
 
@@ -77,7 +151,16 @@ p {
 
 
 .hero {
+    text-align: center;
+    height: 485px;
     background-image: url("/images/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.welcome-shelf {
+    width: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -114,17 +197,17 @@ h3 {
     overflow: hidden;
 }
 
+.Catalog-form {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
 .footer-call {
     color: black;
 }
 
-.advantages-item {
-    width: 400px;
-    height: 385px;
-    text-align: center;
 
-    background-color: #83B3D3
-}
 
 .second {
     background-color: rgba(131, 179, 211, 0.12);
@@ -135,7 +218,8 @@ h3 {
     background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-souvenirs{
+.advantages-souvenirs {
+    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -151,7 +235,21 @@ h3 {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.catalog-nise-hotels{
+.page-container {
+    text-align: center;
+}
+
+.catalog-pages {
+    justify-content: flex-start;
+    display: flex;
+}
+
+.numbers-catalog{
+    border-radius: 4px;
+}
+
+
+.catalog-nise-hotels {
     text-transform: capitalize;
 }
 
@@ -161,6 +259,8 @@ h3 {
 }
 
 .button {
+    border: 0;
+    border-radius: 4px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #756157;
@@ -168,18 +268,23 @@ h3 {
 
 
 .button-blue {
+    border: 0;
+    padding: 8px 50px;
+    border-radius: 0 4px 4px 0;
     background-color: #83B3D3;
 }
 
 
-.subscribe{
+.subscribe {
     flex-direction: row-reverse
 }
 
 .form-subscribe {
+    border-radius: 4px 0 0 4px;
     border: 0;
     padding: 14px 20px;
     padding-right: 385px;
+
     background-color: #F2F2F2;
 }
 
@@ -190,76 +295,150 @@ h3 {
     line-height: 36px;
 }
 
-.button-blue{
-    border: 0;
-    padding: 8px 50px;
+.catalog-beautiful-hotel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-.catalog-image{
+.catalog-cheap {
+    align-items: baseline;
+    justify-content: space-around;
+    display: flex;
+}
+
+.catalog-button-border {
+    justify-content: space-around;
+}
+
+.catalog-button-border {
+    text-align: right;
+    display: flex;
+}
+
+.beautiful-hotels {
+    padding: 20px;
+    border: gray 20px;
+}
+
+.catalog-divider {
+    text-align: center;
+}
+
+.catalog-image {
+    min-height: 412px;
     color: #ffffff;
     background-image: url("./images/catalog-backgroung.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.index-footer{
+.catalog-menu {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+}
+
+.catalog-reset {
+    display: grid;
+}
+
+.page-interested {
+    height: 406px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index-footer {
+
     color: #ffffff;
-    height: 415px;
+    min-height: 415px;
     background-image: url("./images/canion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.index-footer-catalog{
+
+.catalog-footer {
     height: 415px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.pages-numbers{
-    padding: 11px 23px;
-    color: white;
-    background-color:#83B3D3;
+.subscribe-description {
+    margin: 0;
 }
 
-.bread-crumbs{
+.catalog-numbers {
+    border-radius: 4px;
+    display: flex;
+    padding: 11px 23px;
+    color: white;
+    background-color: #83B3D3;
+}
+
+.pages-numbers{
+    display: inline-block;
+}
+
+.pages-numbers-light{
+    color: black;
+    background-color: #F2F2F2;
+}
+
+.pages-numbers-white{
+    color: black;
+    background-color: #ffffff;
+}
+
+.bread-crumbs {
     color: #ffffff;
 }
 
-.catalog-button-apply{
+.catalog-crumbs-bread {
+    display: block;
+}
+
+.catalog-button-apply {
     font-weight: 700;
     padding: 8px 50px;
     background-color: #83B3D3;
 }
 
-.catalog-button-reset{
+.catalog-button-reset {
     font-weight: 700;
     padding: 8px 50px;
     background: fixed;
 
 }
 
-button{
+button {
     font-weight: 700;
-    border: 0;
 }
 
 
-.button-more{
+.button-more {
+    border: 0;
     padding: 8px 26px;
 }
 
-.button-color-second{
+.button-color-second {
+    border: 0;
     padding: 8px 20px;
     background-color: #83B3D3;
 }
 
-.button-color-third{
+.button-color-third {
+    border: 0;
     padding: 8px 18px;
     background-color: #7DB54F;
 }
 
-.catalog-rating{
+.catalog-rating {
+    border-radius: 4px;
     padding: 9px 22px;
     background-color: #F2F2F2;
 }
