@@ -16,11 +16,29 @@
 body {
     width: 1200px;
     font-family: "PT-Sans", Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    background-color: #F2F2F2;
 }
 
-.catalog-html{
-    max-width: 1200px;
+.body-html {
+    background-color: #ffffff;
+}
+
+.page-header {
+    height: 64px;
+    padding: 0 70px;
+}
+
+.page-footer {
+    padding: 0 70px;
+}
+
+.logo {
+    position: absolute;
+}
+
+.catalog-html {
+    width: 1200px;
 }
 
 .main-catalog {
@@ -28,12 +46,30 @@ body {
 }
 
 .navigation {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+}
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    padding-left: 168px;
+    min-width: 340px;
+    justify-content: space-around;
+}
+
+.navigation-container-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
 }
 
 .navigation-list {
@@ -79,7 +115,7 @@ body {
 
 .advantages-item-container {
     width: 230px;
-    min-height: 200px;
+    max-height: 200px;
     padding: 90px 85px;
 }
 
@@ -106,10 +142,14 @@ body {
     align-items: center;
     height: 120px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .main-catalog-hotel {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    padding: 35px 70px 8px;
     margin: 0;
 }
 
@@ -119,11 +159,27 @@ body {
 }
 
 .footer-inline {
+    padding: 12.5px;
     display: inline;
 }
 
 .advantages-interested {
+    padding-bottom: 20px;
     margin: 0;
+}
+
+
+.advantages-interested-main {
+    padding-bottom: 54px;
+}
+
+.advantages-title-live {
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.souvenir {
+    padding-bottom: 30px;
 }
 
 .white {
@@ -165,10 +221,14 @@ p {
     background-size: cover;
 }
 
+.welcome {
+    padding-top: 50px;
+}
+
 .button-search {
-    width: 270px;
-    border: 0;
     font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
     padding: 8px 50px;
 }
 
@@ -177,6 +237,7 @@ h2 {
 }
 
 h3 {
+    margin: 0;
     text-transform: uppercase;
 }
 
@@ -198,12 +259,14 @@ h3 {
 }
 
 .Catalog-form {
-    margin-top: 40px;
     display: flex;
     justify-content: space-around;
 }
 
 .footer-call {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
     color: black;
 }
 
@@ -229,27 +292,57 @@ h3 {
     margin: 0;
     padding: 0;
     width: 400px;
-    height: 385px;
+    max-height: 385px;
     text-align: center;
 
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-eat {
+    padding: 80px 85px;
+}
+
+
 .page-container {
     text-align: center;
 }
 
-.catalog-pages {
-    justify-content: flex-start;
-    display: flex;
+.sedona-city {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.numbers-catalog{
+.rectangle {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-heading {
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.catalog-pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 70px;
+    padding-top: 40px;
+}
+
+.numbers-catalog {
     border-radius: 4px;
 }
 
+.catalog-type-wrap{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
-.catalog-nise-hotels {
+.catalog-nice-hotels {
+    grid-column: 1/-1;
     text-transform: capitalize;
 }
 
@@ -296,9 +389,17 @@ h3 {
 }
 
 .catalog-beautiful-hotel {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    flex-direction: row;
+    gap: 20px;
     align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+.catalog-goods {
+    padding: 0 70px;
 }
 
 .catalog-cheap {
@@ -317,11 +418,27 @@ h3 {
 }
 
 .beautiful-hotels {
+    box-sizing: border-box;
     padding: 20px;
-    border: gray 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
 }
 
+
+.button-cheap-first {
+    justify-content: flex-end;
+}
+
+.catalog-hotels {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+
 .catalog-divider {
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -334,6 +451,7 @@ h3 {
 }
 
 .catalog-menu {
+    margin: 0;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 20px;
@@ -346,30 +464,46 @@ h3 {
 }
 
 .page-interested {
-    height: 406px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .index-footer {
-
+    padding-top: 96px;
+    padding-bottom: 104px;
     color: #ffffff;
-    min-height: 415px;
     background-image: url("./images/canion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .catalog-footer {
-    height: 415px;
     background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.subscribe-catalog {
+    height: 215px;
+    padding-top: 96px;
+    padding-bottom: 104px;
+}
+
+.stop-comfort {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
 .subscribe-description {
+    padding-bottom: 20px;
     margin: 0;
+}
+
+.advantages-subscribe {
+    padding-bottom: 54px;
 }
 
 .catalog-numbers {
@@ -380,16 +514,16 @@ h3 {
     background-color: #83B3D3;
 }
 
-.pages-numbers{
+.pages-numbers {
     display: inline-block;
 }
 
-.pages-numbers-light{
+.pages-numbers-light {
     color: black;
     background-color: #F2F2F2;
 }
 
-.pages-numbers-white{
+.pages-numbers-white {
     color: black;
     background-color: #ffffff;
 }
@@ -400,6 +534,14 @@ h3 {
 
 .catalog-crumbs-bread {
     display: block;
+}
+
+.crumbs-bread {
+    padding: 8px 70px 45px;
+}
+
+.main-crumbs-bread {
+    padding: 0 3px;
 }
 
 .catalog-button-apply {
@@ -417,6 +559,7 @@ h3 {
 
 button {
     font-weight: 700;
+
 }
 
 
@@ -441,4 +584,23 @@ button {
     border-radius: 4px;
     padding: 9px 22px;
     background-color: #F2F2F2;
+}
+
+.beautiful-catalog-hotel {
+    display: grid;
+    flex-direction: column;
+    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.catalog-images {
+    max-width: 100%;
+    grid-column: 1/-1;
+}
+
+.catalog-rating-wrap{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
