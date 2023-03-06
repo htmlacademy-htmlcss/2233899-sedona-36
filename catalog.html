@@ -18,13 +18,13 @@
           <div class="navigation-container">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link" href="home.html">Главная</a>
+                <a class="navigation-link" href="./index.html">Главная</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="about.html">О Седоне</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="hotels.html">Гостиницы</a>
+                <a class="navigation-link" href="./catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -75,25 +75,47 @@
 
               <div class="catalog-crumbs-bread">
                 <h3 class="catalog-menu">Инфраструктура:</h3>
-
-                <input type="checkbox" checked>
-                <p class="catalog-service">Бассейн</p>
-                <input type="checkbox" checked>
-                <p class="catalog-service">Парковка</p>
-                <input type="checkbox">
-                <p class="catalog-service">Wi-Fi</p>
+                <div class="catalog-checkbox">
+                  <label class="checkbox">
+                    <input class="checkbox-item" type="checkbox" checked>
+                    <span class="checkbox-pseudo"></span>
+                    <span class="catalog-text">Бассейн</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox-item" type="checkbox" checked>
+                    <span class="checkbox-pseudo"></span>
+                    <span class="catalog-text">Парковка</span>
+                  </label>
+                  <label class="checkbox">
+                    <input class="checkbox-item" type="checkbox">
+                    <span class="checkbox-pseudo"></span>
+                    <span class="catalog-text">Wi-fi</span>
+                  </label>
+                </div>
               </div>
 
 
               <div class="catalog-crumbs-bread">
                 <h3 class="catalog-menu">Тип жилья:</h3>
+                <div class="catalog-radio">
+                  <label class="radio">
+                    <input class="radio-item" type="radio" checked>
+                    <span class="radio-pseudo"></span>
+                    <span class="catalog-hotel">Гостиница</span>
+                  </label>
 
-                <input type="radio" checked>
-                <p class="catalog-type">Гостиница</p>
-                <input type="radio">
-                <p class="catalog-hotel">Мотель</p>
-                <input type="radio">
-                <p class="catalog-hotel">Апартаменты</p>
+                  <label class="radio">
+                    <input class="radio-item" type="radio">
+                    <span class="radio-pseudo"></span>
+                    <span class="catalog-hotel">Мотель</span>
+                  </label>
+
+                  <label class="radio">
+                    <input class="radio-item" type="radio">
+                    <span class="radio-pseudo"></span>
+                    <span class="catalog-hotel">Апартаменты</span>
+                  </label>
+                </div>
               </div>
 
               <div class="catalog-crumbs-bread">
@@ -264,21 +286,22 @@
           <!--Подпишитесь на рассылку-->
           <div class="page-container catalog-footer">
             <div class="subscribe-catalog">
-              <h2 class="subscribe-description">Подпишитесь на рассылку</h2>
-              <p class="advantages-subscribe">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+              <h2 class="subscribe-description-catalog">Подпишитесь на рассылку</h2>
+              <p class="advantages-subscribe-catalog">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
 
-              <div class="subscribe-radius">
-                <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
-                  <label for="newsletter-email"></label>
-                  <input class="form-subscribe" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-                    id="newsletter-email" required>
+              <form class="subscribe" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="subscribe-radius">
+                  <label for="newsletter-email">
+                    <input class="form-subscribe" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                      id="newsletter-email" required>
+                  </label>
 
                   <button class="button button-blue" type="submit">
                     <span class="submit-subscribe">Подписаться</span>
                   </button>
 
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
 

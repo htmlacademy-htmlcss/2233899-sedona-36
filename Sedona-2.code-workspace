@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Sedona-2",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Sedona-2"
+	}
+}
