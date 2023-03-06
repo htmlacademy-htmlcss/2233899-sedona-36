@@ -15,7 +15,8 @@
 
 body {
     width: 1200px;
-    font-family: "PT-Sans", Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans';
+    font-style: normal;
     margin: 0 auto;
     background-color: #F2F2F2;
 }
@@ -106,6 +107,13 @@ body {
     background-color: #83B3D3
 }
 
+.main-text {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
 .advantages-list {
     margin: 0;
     padding: 0;
@@ -121,6 +129,12 @@ body {
 
 .advantages-item-wide {
     display: flex;
+}
+
+.advantages-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .advantages-item-wide-rewerse {
@@ -164,18 +178,43 @@ body {
 }
 
 .advantages-interested {
+    color: #000000;
     padding-bottom: 20px;
     margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
 }
 
+.advantages-description-comfort {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
 
 .advantages-interested-main {
+    color: #333333;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
     padding-bottom: 54px;
 }
 
 .advantages-title-live {
+    color: #000000;
     padding-bottom: 30px;
     margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.advantages-live {
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .souvenir {
@@ -225,7 +264,13 @@ p {
     padding-top: 50px;
 }
 
+.ornament {
+    padding-top: 23px;
+    background-position: 50% 50%;
+}
+
 .button-search {
+    color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -320,6 +365,9 @@ h3 {
 .main-heading {
     padding-bottom: 25px;
     margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
 }
 
 .catalog-pages {
@@ -334,7 +382,7 @@ h3 {
     border-radius: 4px;
 }
 
-.catalog-type-wrap{
+.catalog-type-wrap {
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
@@ -350,6 +398,7 @@ h3 {
 .souvenirs-second {
     background-color: #ffffff;
 }
+
 
 .button {
     border: 0;
@@ -372,11 +421,22 @@ h3 {
     flex-direction: row-reverse
 }
 
+.subscribe-radius {
+    display: inline-flex;
+}
+
 .form-subscribe {
+    padding-left: 20px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    width: 452px;
     border-radius: 4px 0 0 4px;
     border: 0;
-    padding: 14px 20px;
-    padding-right: 385px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
 
     background-color: #F2F2F2;
 }
@@ -460,6 +520,8 @@ h3 {
 }
 
 .catalog-reset {
+    position: relative;
+    top: 50px;
     display: grid;
 }
 
@@ -498,12 +560,37 @@ h3 {
 }
 
 .subscribe-description {
+    color: #ffffff;
     padding-bottom: 20px;
     margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.subscribe-description-catalog{
+    color: #000000;
+    padding-bottom: 20px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
 }
 
 .advantages-subscribe {
+    color: #ffffff;
     padding-bottom: 54px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.advantages-subscribe-catalog{
+    color: #333333;
+    padding-bottom: 54px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .catalog-numbers {
@@ -551,6 +638,8 @@ h3 {
 }
 
 .catalog-button-reset {
+    position: relative;
+    top: 40px;
     font-weight: 700;
     padding: 8px 50px;
     background: fixed;
@@ -598,9 +687,104 @@ button {
     grid-column: 1/-1;
 }
 
-.catalog-rating-wrap{
+.catalog-rating-wrap {
     grid-column: 1/-1;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+.checkbox-item {
+    position: absolute;
+    appearance: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-pseudo {
+    display: inline-block;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.catalog-checkbox {
+    margin-top: 32px;
+    display: grid;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    gap: 16px;
+}
+
+.catalog-text {
+    padding-left: 16px;
+}
+
+.checkbox-item:checked ~ .checkbox-pseudo {
+    background-color: #ffffff;
+    background-image: url(./images/checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox-item:focus ~ .checkbox-pseudo {
+    box-shadow: 0 0 0 3px #83B3D3;
+}
+
+
+
+
+.radio-item {
+    position: absolute;
+    appearance: none;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.radio-pseudo {
+    display: inline-block;
+    border-radius: 20px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.catalog-radio {
+    margin-top: 32px;
+    display: grid;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    gap: 16px;
+}
+
+.catalog-hotel {
+    padding-left: 16px;
+}
+
+.radio-item:checked ~ .radio-pseudo {
+    background-color: #ffffff;
+    background-image: url(./images/radio.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.radio-item:focus ~ .radio-pseudo {
+    box-shadow: 0 0 0 3px #83B3D3;
 }
