@@ -19,10 +19,13 @@ body {
     font-style: normal;
     margin: 0 auto;
     background-color: #F2F2F2;
+
+    display: grid;
+    grid-template-rows: min-content auto min-content;
 }
 
 .body-html {
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .page-header {
@@ -88,6 +91,7 @@ body {
 
 .navigation-link {
     color: black;
+    padding: 20px 16px;
 }
 
 .page-header-action {
@@ -105,6 +109,72 @@ body {
     color: #ffffff;
 
     background-color: #83B3D3
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    width: 292px;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.select-control {
+    width: 100%;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    appearance: none;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+
+    padding: 12px 20px;
+    padding-right: 40px;
+
+    background-image: url(./images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.select-control:hover {
+    border-color: #68a2ca;
+}
+
+.select-control:focus {
+    border-color: #3f5e72;
+    outline: none;
+}
+
+.view-buttons {
+    padding-right: 10px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.view-buttons-item {
+    justify-content: space-between;
+    padding: 14px 15px;
+    margin: 0 3.5px;
+
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.view-button{
+    cursor: pointer;
+}
+
+.catalog-products-container {
+    display: flex;
+    max-height: 50px;
+    padding: 50px 70px 40px;
+    align-items: center;
 }
 
 .main-text {
@@ -217,6 +287,10 @@ body {
     line-height: 21px;
 }
 
+.advantages-title {
+    text-transform: uppercase;
+}
+
 .souvenir {
     padding-bottom: 30px;
 }
@@ -275,13 +349,14 @@ p {
     font-size: 20px;
     line-height: 36px;
     padding: 8px 50px;
+    cursor: pointer;
 }
 
 h2 {
     text-transform: uppercase;
 }
 
-h3 {
+h4 {
     margin: 0;
     text-transform: uppercase;
 }
@@ -414,6 +489,7 @@ h3 {
     padding: 8px 50px;
     border-radius: 0 4px 4px 0;
     background-color: #83B3D3;
+    cursor: pointer;
 }
 
 
@@ -426,7 +502,7 @@ h3 {
 }
 
 .form-subscribe {
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     font-family: 'PT Sans';
     font-style: normal;
     width: 452px;
@@ -436,7 +512,6 @@ h3 {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    padding: 0;
 
     background-color: #F2F2F2;
 }
@@ -494,6 +569,8 @@ h3 {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+
+    margin: 0;
 }
 
 
@@ -568,7 +645,7 @@ h3 {
     line-height: 36px;
 }
 
-.subscribe-description-catalog{
+.subscribe-description-catalog {
     color: #000000;
     padding-bottom: 20px;
     margin: 0;
@@ -585,7 +662,7 @@ h3 {
     line-height: 26px;
 }
 
-.advantages-subscribe-catalog{
+.advantages-subscribe-catalog {
     color: #333333;
     padding-bottom: 54px;
     font-weight: 400;
@@ -635,6 +712,7 @@ h3 {
     font-weight: 700;
     padding: 8px 50px;
     background-color: #83B3D3;
+
 }
 
 .catalog-button-reset {
@@ -644,35 +722,56 @@ h3 {
     padding: 8px 50px;
     background: fixed;
 
+
 }
 
 button {
     font-weight: 700;
-
+    cursor: pointer;
 }
 
 
 .button-more {
     border: 0;
     padding: 8px 26px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button-color-second {
     border: 0;
     padding: 8px 20px;
     background-color: #83B3D3;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button-color-third {
     border: 0;
     padding: 8px 18px;
     background-color: #7DB54F;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .catalog-rating {
     border-radius: 4px;
     padding: 9px 22px;
     background-color: #F2F2F2;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .beautiful-catalog-hotel {
@@ -757,7 +856,7 @@ button {
 
 .radio-pseudo {
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 50%;
     width: 18px;
     height: 18px;
     border: 1px solid #ffffff;
@@ -787,4 +886,34 @@ button {
 
 .radio-item:focus ~ .radio-pseudo {
     box-shadow: 0 0 0 3px #83B3D3;
+}
+
+
+fieldset {
+    border: none;
+}
+
+.catalog-filter-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.navigation-link-current {
+    position: relative;
+    padding-bottom: 18.5px;
+}
+
+.navigation-link-current::after {
+    position: absolute;
+    content: "";
+
+    right: 16px;
+    left: 16px;
+    bottom: 0;
+
+    height: 2px;
+    background-color: #756157;
 }
