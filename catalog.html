@@ -12,7 +12,8 @@
     <div class="body-html">
       <header class="page-header">
         <nav class="navigation">
-          <img class="logo" src="./images/logo.png" width="140" height="70" alt="Иконка">
+
+          <img class="logo" src="./images/logo.png" width="140" height="70" alt="Логитип города Седона.">
 
           <!--Header №1-->
           <div class="navigation-container">
@@ -73,54 +74,76 @@
           <section class="catalog-settings">
             <form class="Catalog-form">
 
-              <div class="catalog-crumbs-bread">
-                <h3 class="catalog-menu">Инфраструктура:</h3>
+              <fieldset class="catalog-crumbs-bread">
+                <legend class="catalog-menu">Инфраструктура:</legend>
                 <div class="catalog-checkbox">
                   <label class="checkbox">
-                    <input class="checkbox-item" type="checkbox" checked>
+                    <input class="checkbox-item" type="checkbox" name="pool" checked>
                     <span class="checkbox-pseudo"></span>
                     <span class="catalog-text">Бассейн</span>
                   </label>
                   <label class="checkbox">
-                    <input class="checkbox-item" type="checkbox" checked>
+                    <input class="checkbox-item" type="checkbox" name="parking" checked>
                     <span class="checkbox-pseudo"></span>
                     <span class="catalog-text">Парковка</span>
                   </label>
                   <label class="checkbox">
-                    <input class="checkbox-item" type="checkbox">
+                    <input class="checkbox-item" type="checkbox" name="wifi">
                     <span class="checkbox-pseudo"></span>
                     <span class="catalog-text">Wi-fi</span>
                   </label>
                 </div>
-              </div>
+              </fieldset>
 
 
-              <div class="catalog-crumbs-bread">
-                <h3 class="catalog-menu">Тип жилья:</h3>
+              <fieldset class="catalog-crumbs-bread">
+                <legend class="catalog-menu">Тип жилья:</legend>
                 <div class="catalog-radio">
                   <label class="radio">
-                    <input class="radio-item" type="radio" checked>
+                    <input class="radio-item" name="radio-house" type="radio" checked>
                     <span class="radio-pseudo"></span>
                     <span class="catalog-hotel">Гостиница</span>
                   </label>
 
                   <label class="radio">
-                    <input class="radio-item" type="radio">
+                    <input class="radio-item" name="radio-house" type="radio">
                     <span class="radio-pseudo"></span>
                     <span class="catalog-hotel">Мотель</span>
                   </label>
 
                   <label class="radio">
-                    <input class="radio-item" type="radio">
+                    <input class="radio-item" name="radio-house" type="radio">
                     <span class="radio-pseudo"></span>
                     <span class="catalog-hotel">Апартаменты</span>
                   </label>
                 </div>
-              </div>
+              </fieldset>
 
-              <div class="catalog-crumbs-bread">
-                <h3 class="catalog-menu">Стоимость, ₽:</h3>
-              </div>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <div class="range">
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label">
+                      <span class="range-input-label">от</span>
+                      <input class="range-input range-input-min" type="number" value="0" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label">
+                      <span class="range-input-label">до</span>
+                      <input class="range-input range-input-max" type="number" value="9000" name="max-price">
+                    </label>
+                  </div>
+                  <div class="range-scale">
+                    <div class="range-bar" style="left: 0; width: 226px;">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную стоимость</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную стоимость</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
 
               <div class="catalog-crumbs-bread">
                 <div class="catalog-reset">
@@ -137,30 +160,33 @@
 
         <!--Найдено гостиниц-->
         <section class="catalog-rooms">
-          <div class="catalog-cheap">
-            <h1 class="catalog-hotels">Найдено гостиниц: 38</h1>
-
-            <button class=" button-cheap-first">
-              Сначала дешевые
-              <img src="./images/arrow.svg" alt="Скрепка">
-            </button>
-
-
-            <ul class="catalog-button-border">
-              <li>
-                <button class="button-border">
-                  <img class="distribution" src="./images/tile.svg" alt="tile">
-                </button>
+          <div class="catalog-products-container">
+            <h1 class="catalog-hotels">Найдено гостиниц: <span>38</span></h1>
+            <div class="select sorting-type">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap" selected>Сначала дешевые</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+            </div>
+            <ul class="view-buttons">
+              <li class="view-buttons-item">
+                <a class="view-button view-button-current view-button-tile" href="#">
+                  <img src="./images/tile.svg" alt="#">
+                  <span class="visually-hidden">Показать плиткой</span>
+                </a>
               </li>
-              <li>
-                <button class="button-border">
-                  <img class="distribution" src="./images/slideshow.svg" alt="slideshow">
-                </button>
+              <li class="view-buttons-item">
+                <a class="view-button view-button-card" href="#">
+                  <img src="./images/slideshow.svg" alt="#">
+                  <span class="visually-hidden">Показать картачками</span>
+                </a>
               </li>
-              <li>
-                <button class="button-border">
-                  <img class="distribution" src="./images/list.svg" alt="list">
-                </button>
+              <li class="view-buttons-item">
+                <img src="./images/list.svg" alt="#">
+                <a class="view-button view-button-list" href="#">
+                  <span class="visually-hidden">Показать плиткой</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -316,20 +342,20 @@
         <div class="footer-social-network">
           <ul class="connection-footer">
             <li class="footer-inline">
-              <a href="http://vk">
+              <a class="footer-catalog-link" href="#">
                 <img class="connection" src="./images/VK.svg" alt="ВКонтакте">
                 <p class="visually-hidden">ВКонтакте</p>
               </a>
             </li>
             <li class="footer-inline">
-              <a href="http://telegram">
+              <a class="footer-catalog-link" href="#">
                 <img class="connection" src="./images/Telegram.svg" alt="Телеграм">
                 <p class="visually-hidden">Телеграм</p>
               </a>
             </li>
             <li class="footer-inline">
-              <a href="http://youtube">
-                <img class="connection" src="./images/Youtube.svg" alt="Ютуб">
+              <a class="footer-catalog-link" href="#">
+                <img class="connection" src="./images/Youtube.svg" alt="Ютуб" fill="currentColor">
                 <p class="visually-hidden">Ютуб</p>
               </a>
             </li>

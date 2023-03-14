@@ -1,13 +1,13 @@
 @font-face {
     font-family: "PT-Sans";
-    src: url(./fonts/ptsans-400.woff2) format("woff2");
+    src: url("./fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: "PT-Sans";
-    src: url(./fonts/ptsans-700.woff2) format("woff2");
+    src: url("./fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-display: swap;
 }
@@ -15,14 +15,17 @@
 
 body {
     width: 1200px;
-    font-family: 'PT Sans';
+    font-family: 'PT-Sans';
     font-style: normal;
     margin: 0 auto;
     background-color: #F2F2F2;
+
+    display: grid;
+    grid-template-rows: min-content auto min-content;
 }
 
 .body-html {
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .page-header {
@@ -88,6 +91,7 @@ body {
 
 .navigation-link {
     color: black;
+    padding: 20px 16px;
 }
 
 .page-header-action {
@@ -107,6 +111,72 @@ body {
     background-color: #83B3D3
 }
 
+.select {
+    display: flex;
+    align-items: center;
+    width: 292px;
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.select-control {
+    width: 100%;
+
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    appearance: none;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+
+    padding: 12px 20px;
+    padding-right: 40px;
+
+    background-image: url("./images/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+}
+
+.select-control:hover {
+    border-color: #68a2ca;
+}
+
+.select-control:focus {
+    border-color: #3f5e72;
+    outline: none;
+}
+
+.view-buttons {
+    padding-right: 10px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.view-buttons-item {
+    justify-content: space-between;
+    padding: 14px 15px;
+    margin: 0 3.5px;
+
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.view-button {
+    cursor: pointer;
+}
+
+.catalog-products-container {
+    display: flex;
+    max-height: 50px;
+    padding: 50px 70px 40px;
+    align-items: center;
+}
+
 .main-text {
     color: #333333;
     font-weight: 400;
@@ -123,8 +193,12 @@ body {
 
 .advantages-item-container {
     width: 230px;
-    max-height: 200px;
+    min-height: 200px;
     padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .advantages-item-wide {
@@ -217,6 +291,33 @@ body {
     line-height: 21px;
 }
 
+.advantages-title {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 32px;
+    position: relative;
+    padding-bottom: 30px;
+    width: 175px;
+}
+
+.advantages-title::before {
+    align-items: center;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 60px;
+    height: 2px;
+    background-color: currentColor;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+}
+.images{
+    height: 100%;
+    object-fit: cover;
+}
+
 .souvenir {
     padding-bottom: 30px;
 }
@@ -275,13 +376,15 @@ p {
     font-size: 20px;
     line-height: 36px;
     padding: 8px 50px;
+    cursor: pointer;
 }
+
 
 h2 {
     text-transform: uppercase;
 }
 
-h3 {
+h4 {
     margin: 0;
     text-transform: uppercase;
 }
@@ -414,6 +517,7 @@ h3 {
     padding: 8px 50px;
     border-radius: 0 4px 4px 0;
     background-color: #83B3D3;
+    cursor: pointer;
 }
 
 
@@ -426,7 +530,7 @@ h3 {
 }
 
 .form-subscribe {
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     font-family: 'PT Sans';
     font-style: normal;
     width: 452px;
@@ -436,7 +540,6 @@ h3 {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    padding: 0;
 
     background-color: #F2F2F2;
 }
@@ -494,6 +597,8 @@ h3 {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+
+    margin: 0;
 }
 
 
@@ -568,7 +673,7 @@ h3 {
     line-height: 36px;
 }
 
-.subscribe-description-catalog{
+.subscribe-description-catalog {
     color: #000000;
     padding-bottom: 20px;
     margin: 0;
@@ -585,7 +690,7 @@ h3 {
     line-height: 26px;
 }
 
-.advantages-subscribe-catalog{
+.advantages-subscribe-catalog {
     color: #333333;
     padding-bottom: 54px;
     font-weight: 400;
@@ -635,6 +740,7 @@ h3 {
     font-weight: 700;
     padding: 8px 50px;
     background-color: #83B3D3;
+
 }
 
 .catalog-button-reset {
@@ -644,35 +750,56 @@ h3 {
     padding: 8px 50px;
     background: fixed;
 
+
 }
 
 button {
     font-weight: 700;
-
+    cursor: pointer;
 }
 
 
 .button-more {
     border: 0;
     padding: 8px 26px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button-color-second {
     border: 0;
     padding: 8px 20px;
     background-color: #83B3D3;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .button-color-third {
     border: 0;
     padding: 8px 18px;
     background-color: #7DB54F;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .catalog-rating {
     border-radius: 4px;
     padding: 9px 22px;
     background-color: #F2F2F2;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .beautiful-catalog-hotel {
@@ -732,7 +859,7 @@ button {
 
 .checkbox-item:checked ~ .checkbox-pseudo {
     background-color: #ffffff;
-    background-image: url(./images/checkbox.svg);
+    background-image: url("./images/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -757,7 +884,7 @@ button {
 
 .radio-pseudo {
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 50%;
     width: 18px;
     height: 18px;
     border: 1px solid #ffffff;
@@ -780,11 +907,74 @@ button {
 
 .radio-item:checked ~ .radio-pseudo {
     background-color: #ffffff;
-    background-image: url(./images/radio.svg);
+    background-image: url("./images/radio.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .radio-item:focus ~ .radio-pseudo {
     box-shadow: 0 0 0 3px #83B3D3;
+}
+
+
+fieldset {
+    border: none;
+}
+
+.catalog-filter-title {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.navigation-link-current {
+    position: relative;
+    padding-bottom: 18.5px;
+}
+
+.navigation-link-current::after {
+    position: absolute;
+    content: "";
+
+    right: 16px;
+    left: 16px;
+    bottom: 0;
+
+    height: 2px;
+    background-color: #756157;
+}
+
+.popup:active {
+    display: flex;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container {
+    width: 717px;
+    height: 576px;
+    background: #ffffff;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+
+.popup::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+    ;
 }
