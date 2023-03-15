@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     src: url("./fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     src: url("./fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-display: swap;
@@ -15,7 +15,7 @@
 
 body {
     width: 1200px;
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     margin: 0 auto;
     background-color: #F2F2F2;
@@ -122,7 +122,7 @@ body {
 .select-control {
     width: 100%;
 
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -276,6 +276,8 @@ body {
 }
 
 .advantages-title-live {
+    text-align: center;
+    text-transform: uppercase;
     color: #000000;
     padding-bottom: 30px;
     margin: 0;
@@ -532,7 +534,7 @@ h4 {
 
 .form-subscribe {
     padding: 0 0 0 20px;
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     width: 452px;
     border-radius: 4px 0 0 4px;
@@ -764,7 +766,7 @@ button {
 .button-more {
     border: 0;
     padding: 8px 26px;
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -775,7 +777,7 @@ button {
     border: 0;
     padding: 8px 20px;
     background-color: #83B3D3;
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -786,7 +788,7 @@ button {
     border: 0;
     padding: 8px 18px;
     background-color: #7DB54F;
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -797,7 +799,7 @@ button {
     border-radius: 4px;
     padding: 9px 22px;
     background-color: #F2F2F2;
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -924,7 +926,7 @@ fieldset {
 }
 
 .catalog-filter-title {
-    font-family: "PT-Sans";
+    font-family: 'PT Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -965,7 +967,23 @@ fieldset {
     background-color: #756157;
 }
 
+.index-popup-title {
+    width: 660px;
+    margin: 0;
+    padding-left: 70px;
+    padding-top: 64px;
+}
+
+.index-popup-button {
+    border: none;
+    background: none;
+    right: 52px;
+    position: absolute;
+    padding: 64px 0 0;
+}
+
 .popup-active {
+    position: relative;
     display: flex;
 }
 
@@ -980,7 +998,19 @@ fieldset {
     justify-content: center;
 }
 
+.popup-title {
+    text-transform: capitalize;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
 .popup-container {
+    display: flex;
+    position: relative;
     width: 717px;
     height: 576px;
     background: #ffffff;
@@ -1055,7 +1085,7 @@ fieldset {
     cursor: pointer;
 }
 
-.catalog-filter-label{
+.catalog-filter-label {
     position: relative;
 }
 
@@ -1080,4 +1110,138 @@ fieldset {
 
 legend.catalog-filter-title {
     padding-bottom: 30px;
+}
+
+.index-popup-form {
+    padding-left: 24px;
+}
+
+.index-popup-form-departure {
+    padding-left: 18px;
+}
+
+
+.index-popup {
+    border-radius: 4px;
+    position: relative;
+    background-color: #F2F2F2;
+    align-items: center;
+    width: 440px;
+    height: 48px;
+}
+
+.index-popup-calendar {
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    border: none;
+}
+
+.index-popup-check-in {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 164px 0 0;
+    display: flex;
+    left: 70px;
+}
+
+.index-popup-departure {
+    align-items: center;
+    position: absolute;
+    padding: 260px 0 0;
+    display: flex;
+    left: 70px;
+}
+
+.date-popup {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 0 12px 20px;
+    background-color: #F2F2F2;
+    border: none;
+}
+
+.index-popup-date {
+    max-width: 577px;
+}
+
+
+.popup-parents-children {
+    width: 577px;
+    justify-content: space-between;
+    padding: 356px 0 0;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 70px;
+}
+
+.popup-parents {
+    border: none;
+    align-items: center;
+    display: flex;
+}
+
+.popup-children {
+    border: none;
+    align-items: center;
+    display: flex;
+}
+
+.index-parents-form {
+    border-radius: 4px;
+    width: 110px;
+    height: 48px;
+    background-color: #F2F2F2;
+}
+
+.index-children-form {
+    border-radius: 4px;
+    width: 110px;
+    height: 48px;
+    background-color: #F2F2F2;
+}
+
+
+.popup-fieldset {
+    width: 577px;
+}
+
+.popup-parents-label {
+    width: 110px;
+}
+
+
+.button-blue-popup {
+    padding: 0;
+    width: 577px;
+    height: 60px;
+    border-radius: 10px;
+    background: #83B3D3;
+}
+
+
+.popup-find {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.popup-button {
+    position: absolute;
+    padding-top: 452px;
+    left: 70px;
+}
+
+
+.index-children {
+    padding-right: 46px;
+}
+
+.index-parents {
+    padding-right: 46px;
 }
