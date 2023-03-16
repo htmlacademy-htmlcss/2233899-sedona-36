@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'PT Sans';
-    src: url("./fonts/ptsans-400.woff2") format("woff2");
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'PT Sans';
-    src: url("./fonts/ptsans-700.woff2") format("woff2");
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-display: swap;
 }
@@ -105,6 +105,7 @@ body {
 }
 
 .advantages-item {
+    word-break: break-all;
     text-align: center;
     color: #ffffff;
 
@@ -134,7 +135,7 @@ body {
     padding: 12px 20px;
     padding-right: 40px;
 
-    background-image: url("./images/arrow.svg");
+    background-image: url("/images/arrow.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
 }
@@ -433,6 +434,7 @@ h4 {
 }
 
 .advantages-souvenirs {
+    word-break: break-all;
     display: flex;
     margin: 0;
     padding: 0;
@@ -440,13 +442,15 @@ h4 {
 
 
 .advantages-item-souvenirs {
+    word-break: break-all;
     margin: 0;
     padding: 0;
     width: 400px;
-    max-height: 385px;
+    min-height: 385px;
     text-align: center;
 
     background-color: rgba(131, 179, 211, 0.12);
+    object-fit: cover;
 }
 
 .advantages-eat {
@@ -481,7 +485,7 @@ h4 {
     flex-direction: row;
     align-items: center;
     padding: 0 70px;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 
 .numbers-catalog {
@@ -568,7 +572,16 @@ h4 {
 }
 
 .catalog-goods {
+    position: relative;
     padding: 0 70px;
+}
+
+.catalog-goods::after {
+    border: 1px solid #E6E6E6;
+    position: absolute;
+    width: 1060px;
+    content: "";
+    bottom: -40px;
 }
 
 .catalog-cheap {
@@ -587,10 +600,12 @@ h4 {
 }
 
 .beautiful-hotels {
+    max-width: 340px;
     box-sizing: border-box;
     padding: 20px;
     border: 1px solid #E6E6E6;
     border-radius: 4px;
+    object-fit: cover;
 }
 
 
@@ -616,7 +631,7 @@ h4 {
 .catalog-image {
     min-height: 412px;
     color: #ffffff;
-    background-image: url("./images/catalog-backgroung.jpg");
+    background-image: url("/images/catalog-backgroung.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -648,7 +663,7 @@ h4 {
     padding-top: 96px;
     padding-bottom: 104px;
     color: #ffffff;
-    background-image: url("./images/canion.jpg");
+    background-image: url("/images/canion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -775,6 +790,10 @@ button {
     line-height: 20px;
 }
 
+.button-more:focus {
+    background-color: #615048;
+}
+
 .button-color-second {
     border: 0;
     padding: 8px 20px;
@@ -865,7 +884,7 @@ button {
 
 .checkbox-item:checked ~ .checkbox-pseudo {
     background-color: #ffffff;
-    background-image: url("./images/checkbox.svg");
+    background-image: url("/images/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -913,7 +932,7 @@ button {
 
 .radio-item:checked ~ .radio-pseudo {
     background-color: #ffffff;
-    background-image: url("./images/radio.svg");
+    background-image: url("/images/radio.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
