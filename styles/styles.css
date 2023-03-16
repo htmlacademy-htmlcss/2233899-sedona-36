@@ -404,6 +404,7 @@ body {
 }
 
 .button-search {
+
     color: #ffffff;
     font-weight: 700;
     font-size: 20px;
@@ -574,6 +575,8 @@ body {
 
 
 .button-blue {
+    font-weight: 700;
+
     border: 0;
     padding: 8px 50px;
     border-radius: 0 4px 4px 0;
@@ -843,11 +846,6 @@ body {
 
 }
 
-button {
-    font-weight: 700;
-    cursor: pointer;
-}
-
 
 .button-more {
     border: 0;
@@ -1062,6 +1060,9 @@ button {
 }
 
 .index-popup-button {
+    font-weight: 700;
+    cursor: pointer;
+
     border: none;
     background: none;
     right: 52px;
@@ -1163,6 +1164,8 @@ button {
 
 
 .range-toggle {
+    font-weight: 700;
+
     position: absolute;
     width: 20px;
     height: 20px;
@@ -1218,6 +1221,9 @@ legend.catalog-filter-title {
 }
 
 .index-popup-calendar {
+    font-weight: 700;
+    cursor: pointer;
+
     padding: 0;
     position: absolute;
     top: 16px;
@@ -1312,6 +1318,9 @@ legend.catalog-filter-title {
 
 
 .button-blue-popup {
+    font-weight: 700;
+    cursor: pointer;
+
     padding: 0;
     width: 577px;
     height: 60px;
