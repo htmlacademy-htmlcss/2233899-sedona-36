@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans';
     src: url("/fonts/ptsans-400.woff2") format("woff2");
     font-weight: 400;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans';
     src: url("/fonts/ptsans-700.woff2") format("woff2");
     font-weight: 700;
     font-display: swap;
@@ -15,7 +15,7 @@
 
 body {
     width: 1200px;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     margin: 0 auto;
     background-color: #F2F2F2;
@@ -38,6 +38,7 @@ body {
 }
 
 .logo {
+    z-index: 1;
     position: absolute;
 }
 
@@ -122,6 +123,15 @@ body {
     padding: 8px 34px;
 }
 
+.button-header:hover {
+    background-color: #615048;
+}
+
+.button-header:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
+}
+
 .advantages-item {
     list-style: none;
     word-break: break-all;
@@ -142,7 +152,7 @@ body {
 .select-control {
     width: 100%;
 
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
@@ -154,7 +164,7 @@ body {
     padding: 12px 20px;
     padding-right: 40px;
 
-    background-image: url("/images/arrow.svg");
+    background-image: url("../images/arrow.svg");
     background-repeat: no-repeat;
     background-position: right 20px center;
 }
@@ -185,7 +195,7 @@ body {
     padding: 14px 15px;
     margin: 0 3.5px;
 
-    border: 2px solid #000000;
+    border: 2px solid #E5E5E5;
     border-radius: 4px;
 }
 
@@ -193,6 +203,10 @@ body {
     text-decoration: none;
     list-style: none;
     cursor: pointer;
+}
+
+.view-button:hover{
+    border: 2px solid #000000;
 }
 
 .catalog-products-container {
@@ -336,7 +350,7 @@ body {
 
 .advantages-interested-main {
     margin: 0;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -380,11 +394,24 @@ body {
 }
 
 .hero {
+    position: relative;
     text-align: center;
     height: 485px;
-    background-image: url("/images/index-background.jpg");
+    background-image: url("../images/index-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 57px;
+    left: 0;
+    bottom: 0;
+
+
+    background-image: url("../images/shelf.png");
 }
 
 
@@ -413,14 +440,24 @@ body {
     cursor: pointer;
 }
 
+.button-search:hover {
+    background-color: #615048;
+}
+
+.button-search:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
+}
+
 
 .stars {
     color: #83B3D3;
 }
 
 .catalog-type-hotel {
+    white-space: pre-wrap;
     margin: 0;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -429,7 +466,7 @@ body {
 
 .catalog-price {
     margin: 0;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -461,6 +498,14 @@ body {
     font-size: 40px;
     line-height: 40px;
     color: black;
+}
+
+.footer-call:hover {
+    color: #756157;
+}
+
+.footer-call:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .htmlacademy {
@@ -584,6 +629,15 @@ body {
     cursor: pointer;
 }
 
+.button-blue:hover {
+    background-color: #68A2CA;
+}
+
+.button-blue:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
+}
+
 
 .subscribe {
     flex-direction: row-reverse
@@ -595,7 +649,7 @@ body {
 
 .form-subscribe {
     padding: 0 0 0 20px;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     width: 452px;
     border-radius: 4px 0 0 4px;
@@ -689,7 +743,7 @@ body {
 .catalog-image {
     min-height: 412px;
     color: #ffffff;
-    background-image: url("/images/catalog-backgroung.jpg");
+    background-image: url("../images/catalog-backgroung.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -721,7 +775,7 @@ body {
     padding-top: 96px;
     padding-bottom: 104px;
     color: #ffffff;
-    background-image: url("/images/canion.jpg");
+    background-image: url("../images/canion.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -791,6 +845,16 @@ body {
     background-color: #83B3D3;
 }
 
+.catalog-numbers:hover{
+    background-color: #68A2CA;
+    border: 1px solid #82B3D3;
+}
+
+.catalog-numbers:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
+}
+
 .pages-numbers {
     list-style: none;
     display: inline-block;
@@ -801,9 +865,25 @@ body {
     background-color: #F2F2F2;
 }
 
+.pages-numbers-light:hover{
+    color: black;
+    background-color: #F2F2F2;
+    border: none;
+}
+.pages-numbers-light:active{
+    color: black;
+    background-color: #F2F2F2;
+}
+
 .pages-numbers-white {
     color: black;
     background-color: #ffffff;
+}
+
+.pages-numbers-white:hover{
+    color: black;
+    background-color: #ffffff;
+    border: none;
 }
 
 .bread-crumbs {
@@ -836,58 +916,96 @@ body {
 
 }
 
+.catalog-button-apply:hover{
+    background-color: #68A2CA;
+}
+
+.catalog-button-apply:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #83B3D3;
+}
+
 .catalog-button-reset {
     position: relative;
     top: 40px;
     font-weight: 700;
     padding: 8px 50px;
     background: fixed;
+}
 
+.catalog-button-reset:hover{
+    border: 3px solid #82B3D3;
+}
 
+.catalog-button-reset:active{
+    color: rgba(255, 255, 255, 0.3);
 }
 
 
 .button-more {
     border: 0;
     padding: 8px 26px;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
 }
 
-.button-more:focus {
+.button-more:hover {
     background-color: #615048;
+}
+
+.button-more:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
 }
 
 .button-color-second {
     border: 0;
     padding: 8px 20px;
     background-color: #83B3D3;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+}
+
+.button-color-second:hover {
+    background-color: #68a2ca;
+}
+
+.button-color-second:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
 }
 
 .button-color-third {
     border: 0;
     padding: 8px 18px;
     background-color: #7DB54F;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
 }
 
+.button-color-third:hover{
+    background-color: #6C9E42;
+}
+
+.button-color-third:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #7DB54F;
+}
+
 .catalog-rating {
     border-radius: 4px;
     padding: 9px 22px;
     background-color: #F2F2F2;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -951,12 +1069,12 @@ body {
 
 .checkbox-item:checked ~ .checkbox-pseudo {
     background-color: #ffffff;
-    background-image: url("/images/checkbox.svg");
+    background-image: url("../images/checkbox.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.checkbox-item:focus ~ .checkbox-pseudo {
+.checkbox-item:hover ~ .checkbox-pseudo {
     box-shadow: 0 0 0 3px #83B3D3;
 }
 
@@ -999,18 +1117,18 @@ body {
 
 .radio-item:checked ~ .radio-pseudo {
     background-color: #ffffff;
-    background-image: url("/images/radio.svg");
+    background-image: url("../images/radio.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.radio-item:focus ~ .radio-pseudo {
+.radio-item:hover ~ .radio-pseudo {
     box-shadow: 0 0 0 3px #83B3D3;
 }
 
 
 .catalog-filter-title {
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1018,6 +1136,7 @@ body {
 }
 
 .navigation-link-current {
+    z-index: 1;
     position: relative;
     padding-bottom: 17.5px;
 }
@@ -1059,20 +1178,10 @@ body {
     padding-top: 64px;
 }
 
-.index-popup-button {
-    font-weight: 700;
-    cursor: pointer;
-
-    border: none;
-    background: none;
-    right: 52px;
-    position: absolute;
-    padding: 64px 0 0;
-}
 
 .popup-active {
     position: relative;
-    display: flex;
+    display: none;
 }
 
 .popup {
@@ -1081,14 +1190,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    display: none;
     align-items: center;
     justify-content: center;
 }
 
 .popup-title {
+    padding-right: 46px;
     text-transform: capitalize;
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1236,7 +1345,7 @@ legend.catalog-filter-title {
     justify-content: center;
     align-items: center;
     position: absolute;
-    padding: 164px 0 0;
+    top: 164px;
     display: flex;
     left: 70px;
 }
@@ -1245,13 +1354,13 @@ legend.catalog-filter-title {
     list-style: none;
     align-items: center;
     position: absolute;
-    padding: 260px 0 0;
+    top: 260px;
     display: flex;
     left: 70px;
 }
 
 .date-popup {
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1334,9 +1443,18 @@ legend.catalog-filter-title {
     background: #83B3D3;
 }
 
+.button-blue-popup:hover{
+    background-color: #68A2CA;
+}
+
+.button-blue-popup:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #83B3D3;
+}
+
 
 .popup-find {
-    font-family: 'PT Sans', serif;
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1345,15 +1463,136 @@ legend.catalog-filter-title {
 
 .popup-button {
     position: absolute;
-    padding-top: 452px;
+    bottom: 64px;
     left: 70px;
 }
 
 
-.index-children {
-    padding-right: 46px;
+.svg-network {
+    fill: #83B3D3;
 }
 
-.index-parents {
-    padding-right: 46px;
+.svg-network:hover {
+    fill: #68A2CA;
+}
+
+.svg-network:active {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+
+.svg-htmlacademy {
+    fill: black;
+}
+
+.svg-htmlacademy:hover {
+    fill: #756157;
+}
+
+.svg-htmlacademy:active {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+.index-children {
+    position: relative;
+    display: flex;
+}
+
+.svg-info {
+    padding-bottom: 20px;
+    right: 0;
+    padding-right: 10px;
+    bottom: 0;
+    position: absolute;
+    fill: #83B3D3;
+}
+
+.svg-info-info {
+    fill: #ffffff;
+}
+
+.children-popup {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    text-align: center;
+    border: none;
+    width: 100px;
+    height: 48px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.parents-popup {
+    font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    text-align: center;
+    border: none;
+    width: 100px;
+    height: 48px;
+    background: #F2F2F2;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.popup-title-date {
+    padding-right: 24px;
+}
+
+.popup-title-out {
+    padding-right: 18px;
+}
+
+.svg-close {
+    fill: #F2F2F2;
+}
+
+.svg-close-close {
+    fill: #000000;
+}
+
+.svg-close:hover {
+    fill: #E6E6E6;
+
+    border-radius: 3px solid #83B3D3;
+}
+
+.popup-sedona {
+    position: relative;
+    display: flex;
+}
+
+.index-popup-button {
+    font-weight: 700;
+    cursor: pointer;
+
+    border: none;
+    background: none;
+    right: 52px;
+    position: absolute;
+    top: 64px;
+}
+
+
+.popup-past {
+    color: #FF5757;
+    top: 60px;
+    position: absolute;
+}
+
+.popup-available {
+    position: absolute;
+    color: #333333;
+    top: 60px;
+    left: 150px;
 }
